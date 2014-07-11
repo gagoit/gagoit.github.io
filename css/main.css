@@ -131,6 +131,18 @@ a:hover {
 .service-wrapper p {
   margin-top: 0;
 }
+
+.service-wrapper img {
+  width: auto;
+  height: auto;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+.service-wrapper .read-more {
+  margin-top: -20px;
+}
+
 /* Row */
 .service-wrapper-row {
   padding: 10px 0;
@@ -1352,7 +1364,7 @@ span.color-red {
 /*--------------------------------------------------------------------------
 +	'In Press' Style
 --------------------------------------------------------------------------*/
-.in-press a {
+.in-press a, .in-press-new p {
   color: #a0a7ac;
   font-size: 1.3em;
   font-family: Georgia, serif;
@@ -1368,7 +1380,18 @@ span.color-red {
   -ms-transition: color .25s linear;
   transition: color .25s linear;
 }
-.in-press a:hover {
+
+.in-press-new p {
+  padding-bottom: 0;
+  margin-bottom:  10px;
+}
+
+.in-press-new p a.customer-name {
+  text-align: right;
+  float: right;
+}
+
+.in-press a:hover, .in-press-new p:hover {
   color: #4f8db3;
   text-decoration: none;
 }
@@ -1715,7 +1738,7 @@ span.color-red {
   color: 0 -1px 12px rgba(0,0,0,0.4);
 }
 .footer h3 {
-  color: #E4E4E4;
+  color: #E4E4E4 !important;
   font-size: 1.3em;
   border-bottom: 1px dotted #7C7C7C;
 }
